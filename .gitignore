@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Claude AI folder
+.claude/
+
+# Xcode project files (user-specific)
+*.xcuserdata/
+*.xccheckout
+
+# Build artifacts
+build/
+DerivedData/
+*.o
+*.a
+*.so

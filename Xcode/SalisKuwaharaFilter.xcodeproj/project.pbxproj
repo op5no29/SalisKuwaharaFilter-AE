@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B2C3D4E5F6789012345678 /* EffectMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345677 /* EffectMain.cpp */; };
+		A1B2C3D4E5F6789012345679 /* Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345676 /* Strings.cpp */; };
+		A1B2C3D4E5F678901234567A /* Process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345675 /* Process.cpp */; };
+		A1B2C3D4E5F678901234567E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345671 /* Cocoa.framework */; };
+		A1B2C3D4E5F6789012345693 /* PiPL.r in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345672 /* PiPL.r */; };
+		A1B2C3D4E5F6789012345694 /* AEGP_SuiteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345695 /* AEGP_SuiteHandler.cpp */; };
+		A1B2C3D4E5F6789012345696 /* MissingSuiteError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345697 /* MissingSuiteError.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D4E5F6789012345670 /* SalisKuwaharaFilter.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalisKuwaharaFilter.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F6789012345671 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A1B2C3D4E5F6789012345672 /* PiPL.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; name = PiPL.r; path = ../AEAdapter/PiPL.r; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345675 /* Process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Process.cpp; path = ../KuwaharaCore/Process.cpp; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345676 /* Strings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Strings.cpp; path = ../AEAdapter/Strings.cpp; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345677 /* EffectMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffectMain.cpp; path = ../AEAdapter/EffectMain.cpp; sourceTree = "<group>"; };
+		A1B2C3D4E5F678901234567F /* SalisKuwaharaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalisKuwaharaFilter.h; path = ../AEAdapter/SalisKuwaharaFilter.h; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345680 /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Strings.h; path = ../AEAdapter/Strings.h; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345681 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = API.h; path = ../KuwaharaCore/API.h; sourceTree = "<group>"; };
+		A1B2C3D4E5F6789012345682 /* AEGP_SuiteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEGP_SuiteHandler.h; path = /Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Util/AEGP_SuiteHandler.h; sourceTree = "<absolute>"; };
+		A1B2C3D4E5F6789012345695 /* AEGP_SuiteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AEGP_SuiteHandler.cpp; path = /Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Util/AEGP_SuiteHandler.cpp; sourceTree = "<absolute>"; };
+		A1B2C3D4E5F6789012345697 /* MissingSuiteError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissingSuiteError.cpp; path = /Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Util/MissingSuiteError.cpp; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3D4E5F6789012345683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F678901234567E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C3D4E5F6789012345684 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6789012345687 /* Source */,
+				A1B2C3D4E5F6789012345686 /* Frameworks */,
+				A1B2C3D4E5F6789012345685 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F6789012345685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6789012345670 /* SalisKuwaharaFilter.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F6789012345686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6789012345671 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F6789012345687 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6789012345677 /* EffectMain.cpp */,
+				A1B2C3D4E5F678901234567F /* SalisKuwaharaFilter.h */,
+				A1B2C3D4E5F6789012345676 /* Strings.cpp */,
+				A1B2C3D4E5F6789012345680 /* Strings.h */,
+				A1B2C3D4E5F6789012345672 /* PiPL.r */,
+				A1B2C3D4E5F6789012345675 /* Process.cpp */,
+				A1B2C3D4E5F6789012345681 /* API.h */,
+				A1B2C3D4E5F6789012345688 /* SDK Support */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F6789012345688 /* SDK Support */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6789012345695 /* AEGP_SuiteHandler.cpp */,
+				A1B2C3D4E5F6789012345682 /* AEGP_SuiteHandler.h */,
+				A1B2C3D4E5F6789012345697 /* MissingSuiteError.cpp */,
+			);
+			name = "SDK Support";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D4E5F6789012345689 /* SalisKuwaharaFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F678901234568C /* Build configuration list for PBXNativeTarget "SalisKuwaharaFilter" */;
+			buildPhases = (
+				A1B2C3D4E5F678901234568F /* Sources */,
+				A1B2C3D4E5F6789012345683 /* Frameworks */,
+				A1B2C3D4E5F6789012345698 /* Resources */,
+				A1B2C3D4E5F6789012345699 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalisKuwaharaFilter;
+			productName = SalisKuwaharaFilter;
+			productReference = A1B2C3D4E5F6789012345670 /* SalisKuwaharaFilter.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C3D4E5F678901234568A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					A1B2C3D4E5F6789012345689 = {
+						CreatedOnToolsVersion = 16.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D4E5F678901234568B /* Build configuration list for PBXProject "SalisKuwaharaFilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D4E5F6789012345684;
+			productRefGroup = A1B2C3D4E5F6789012345685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D4E5F6789012345689 /* SalisKuwaharaFilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D4E5F6789012345698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6789012345693 /* PiPL.r in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1B2C3D4E5F6789012345699 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile PiPL Resource";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Compile PiPL resource\n/usr/bin/Rez -o \"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Contents/Resources/SalisKuwaharaFilter.rsrc\" -useDF \"$SRCROOT/../AEAdapter/PiPL.r\" -i \"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Headers\" -i \"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Resources\" || exit 1\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3D4E5F678901234568F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6789012345678 /* EffectMain.cpp in Sources */,
+				A1B2C3D4E5F6789012345679 /* Strings.cpp in Sources */,
+				A1B2C3D4E5F678901234567A /* Process.cpp in Sources */,
+				A1B2C3D4E5F6789012345694 /* AEGP_SuiteHandler.cpp in Sources */,
+				A1B2C3D4E5F6789012345696 /* MissingSuiteError.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3D4E5F678901234568D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Headers",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Headers/SP",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Util",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Resources",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F678901234568E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Headers",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Headers/SP",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Util",
+					"/Users/shionshimada/Desktop/ae25.2_20.64bit.AfterEffectsSDK/AfterEffectsSDK/Examples/Resources",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F6789012345691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"PF_USE_CGFLOAT_DEFINES=1",
+					"AE_OS_MAC=1",
+					"PF_DEEP_COLOR_AWARE=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "SalisKuwaharaFilter.plugin-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Salis Kuwahara Filter";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Salis";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.salis.ae.kuwaharafilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F6789012345692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"PF_USE_CGFLOAT_DEFINES=1",
+					"AE_OS_MAC=1",
+					"PF_DEEP_COLOR_AWARE=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "SalisKuwaharaFilter.plugin-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Salis Kuwahara Filter";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Salis";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.salis.ae.kuwaharafilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3D4E5F678901234568B /* Build configuration list for PBXProject "SalisKuwaharaFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F678901234568D /* Debug */,
+				A1B2C3D4E5F678901234568E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D4E5F678901234568C /* Build configuration list for PBXNativeTarget "SalisKuwaharaFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F6789012345691 /* Debug */,
+				A1B2C3D4E5F6789012345692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B2C3D4E5F678901234568A /* Project object */;
+}
