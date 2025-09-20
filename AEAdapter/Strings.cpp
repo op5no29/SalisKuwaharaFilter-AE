@@ -15,9 +15,10 @@ TableString	g_strs[StrID_NUMTYPES] = {
 	StrID_NONE,						"",
 	StrID_Name,						"Salis Kuwahara Filter",
 	StrID_Description,				"Applies a Kuwahara filter for painterly effects.\nBy Salis.",
-	StrID_Mode_Param_Name,			"Mode",
-	StrID_Mode_Choices,				"Classic",
 	StrID_Radius_Param_Name,		"Radius",
+	StrID_Sectors_Param_Name,		"Sector Count",
+	StrID_Anisotropy_Param_Name,	"Anisotropy",
+	StrID_Softness_Param_Name,		"Softness",
 	StrID_Mix_Param_Name,			"Mix",
 };
 
