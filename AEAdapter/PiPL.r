@@ -1,70 +1,34 @@
+/* Salis Kuwahara Filter — PiPL (canonical, decimal-only) */
 #include "AEConfig.h"
 #include "AE_EffectVers.h"
+#include "AE_General.r"
 
-#ifndef AE_OS_WIN
-	#include <AE_General.r>
-#endif
-	
-resource 'PiPL' (16000) {
-	{	/* array properties: 12 elements */
-		/* [1] */
-		Kind {
-			AEEffect
-		},
-		/* [2] */
-		Name {
-			"Salis Kuwahara Filter"
-		},
-		/* [3] */
-		Category {
-			"Salis Effects"
-		},
-#ifdef AE_OS_WIN
-	#ifdef AE_PROC_INTELx64
-		CodeWin64X86 {"EffectMain"},
-	#endif
+resource 'PiPL' (16000)
+{
+  {
+    Kind                 { AEEffect },
+    Name                 { "Salis Kuwahara Filter" },
+    Category             { "Salis Effects" },
+
+    /* 1.0.0 = 65536 (0x00010000) */
+    AE_Effect_Version    { 65536 },
+
+#ifdef AE_OS_MAC
+    CodeMacARM64         { "EffectMain" },
 #else
-	#ifdef AE_OS_MAC
-		CodeMacIntel64 {"EffectMain"},
-		CodeMacARM64 {"EffectMain"},
-	#endif
+    CodeWin64X86         { "EffectMain" },
 #endif
-		/* [6] */
-		AE_PiPL_Version {
-			2,
-			0
-		},
-		/* [7] */
-		AE_Effect_Spec_Version {
-			PF_PLUG_IN_VERSION,
-			PF_PLUG_IN_SUBVERS
-		},
-		/* [8] */
-		AE_Effect_Version {
-			524289	/* 1.0 */
-		},
-		/* [9] */
-		AE_Effect_Info_Flags {
-			0
-		},
-		/* [10] */
-		AE_Effect_Global_OutFlags {
-		0x02000000 //50332160
-		},
-		AE_Effect_Global_OutFlags_2 {
-		0x08000000
-		},
-		/* [11] */
-		AE_Effect_Match_Name {
-			"com.salis.ae.kuwaharafilter"
-		},
-		/* [12] */
-		AE_Reserved_Info {
-			0
-		},
-		/* [13] */
-		AE_Effect_Support_URL {
-			"https://x.com/c_y_l_i"
-		}
-	}
+
+    /* OutFlags = 512 (DEEP_COLOR_AWARE) + 256 (PIX_INDEPENDENT) + 32 (USE_OUTPUT_EXTENT) = 800 */
+    AE_Effect_Global_OutFlags   { 800 },
+
+    /* OutFlags2 = 1024 (SUPPORTS_SMART_RENDER のみ。Float-aware は未広告) */
+    AE_Effect_Global_OutFlags_2 { 1024 },
+
+    AE_Effect_Match_Name { "com.salis.ae.kuwaharafilter.v1003" },
+    /* PiPL テンプレート仕様：integer を 2 個 */
+    AE_PiPL_Version      { 2, 0 },
+    AE_Reserved_Info     { 0 }
+  }
 };
+

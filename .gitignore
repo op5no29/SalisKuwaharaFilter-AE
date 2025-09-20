@@ -1,16 +1,32 @@
-# macOS system files
+# macOS
 .DS_Store
 
-# Claude AI folder
+# Claude / 作業用
 .claude/
+ae_rez_diag_*/
 
-# Xcode project files (user-specific)
-*.xcuserdata/
-*.xccheckout
-
-# Build artifacts
+# Xcode (ユーザー固有/ビルド系)
 build/
+Build/
 DerivedData/
+*.dSYM
 *.o
 *.a
 *.so
+*.xcuserstate
+*.xccheckout
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# プラグイン / バイナリ成果物（インストール先は絶対コミットしない）
+*.plugin
+*.bundle
+*.aex
+*.rsrc
+*.dylib
+*.app
+
+# ログ / 一時
+*.log
+*.tmp

@@ -56,9 +56,6 @@ typedef short int			int16;
 
 /* Parameter defaults */
 
-#define	KUWAHARA_MODE_CLASSIC	0
-#define	KUWAHARA_MODE_COUNT		1
-
 #define	KUWAHARA_RADIUS_MIN		1
 #define	KUWAHARA_RADIUS_MAX		50
 #define	KUWAHARA_RADIUS_DFLT	5
@@ -67,23 +64,41 @@ typedef short int			int16;
 #define	KUWAHARA_MIX_MAX		100
 #define	KUWAHARA_MIX_DFLT		100
 
+#define	KUWAHARA_SECTORS_MIN	3
+#define	KUWAHARA_SECTORS_MAX	16
+#define	KUWAHARA_SECTORS_DFLT	4  // Changed from 8 to 4
+
+#define	KUWAHARA_ANISOTROPY_MIN		0.0
+#define	KUWAHARA_ANISOTROPY_MAX		1.0
+#define	KUWAHARA_ANISOTROPY_DFLT	0.0
+
+#define	KUWAHARA_SOFTNESS_MIN		0.0
+#define	KUWAHARA_SOFTNESS_MAX		1.0
+#define	KUWAHARA_SOFTNESS_DFLT		0.0
+
 enum {
 	KUWAHARA_INPUT = 0,
-	KUWAHARA_MODE,
 	KUWAHARA_RADIUS,
+	KUWAHARA_SECTORS,
+	KUWAHARA_ANISOTROPY,
+	KUWAHARA_SOFTNESS,
 	KUWAHARA_MIX,
 	KUWAHARA_NUM_PARAMS
 };
 
 enum {
-	MODE_DISK_ID = 1,
-	RADIUS_DISK_ID,
+	RADIUS_DISK_ID = 1,
+	SECTORS_DISK_ID,
+	ANISOTROPY_DISK_ID,
+	SOFTNESS_DISK_ID,
 	MIX_DISK_ID,
 };
 
 typedef struct KuwaharaInfo {
-	A_long		mode;
 	PF_FpLong	radius;
+	A_long		sectorCount;
+	PF_FpLong	anisotropy;
+	PF_FpLong	softness;
 	PF_FpLong	mix;
 	// Cache for performance
 	A_long		radiusInt;
@@ -92,6 +107,13 @@ typedef struct KuwaharaInfo {
 	A_long		height;
 } KuwaharaInfo, *KuwaharaInfoP, **KuwaharaInfoH;
 
+#ifndef DllExport
+#  if defined(__APPLE__)
+#    define DllExport __attribute__((visibility("default")))
+#  else
+#    define DllExport __declspec(dllexport)
+#  endif
+#endif
 
 extern "C" {
 
